@@ -1,0 +1,403 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  color: #193c30;
+}
+
+a {
+  text-decoration: none;
+}
+
+.login-page {
+  min-height: 100vh;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 8% 20%, #d8f0d5 0%, transparent 40%),
+    radial-gradient(ellipse at 95% 85%, #d5edcb 0%, transparent 35%),
+    #f6faf3;
+}
+
+.login-navbar {
+  max-width: 1320px;
+  margin: auto;
+  padding: 25px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-size: 30px;
+  font-weight: 800;
+  color: #237947;
+  letter-spacing: -1px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-links a {
+  color: #36564a;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav-links .nav-register {
+  padding: 12px 24px;
+  border: 1.5px solid #26824b;
+  border-radius: 30px;
+  color: #237947;
+}
+
+.login-layout {
+  max-width: 1320px;
+  margin: 35px auto 0;
+  padding: 20px 6% 45px;
+  display: grid;
+  grid-template-columns: 1fr 0.94fr;
+  align-items: center;
+  gap: 65px;
+}
+
+.login-intro {
+  position: relative;
+  padding: 20px 0;
+}
+
+.eyebrow {
+  display: inline-block;
+  background: #e0f1df;
+  color: #247a46;
+  padding: 10px 15px;
+  border-radius: 30px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-bottom: 25px;
+}
+
+.login-intro h1 {
+  font-size: clamp(38px, 4.1vw, 59px);
+  line-height: 1.13;
+  letter-spacing: -2.4px;
+  color: #193d31;
+}
+
+.login-intro h1 span {
+  display: block;
+  color: #28834b;
+}
+
+.intro-description {
+  margin-top: 22px;
+  max-width: 440px;
+  color: #62766b;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.eco-benefits {
+  display: grid;
+  gap: 23px;
+  margin-top: 36px;
+}
+
+.benefit {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.benefit-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 17px;
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+  background: #e2f2dd;
+  flex-shrink: 0;
+}
+
+.benefit h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.benefit p {
+  color: #708176;
+  font-size: 13px;
+}
+
+.earth-art {
+  margin-top: 25px;
+  font-size: 94px;
+  width: fit-content;
+  position: relative;
+  filter: drop-shadow(0 12px 14px #b5d9b4);
+}
+
+.earth-art span {
+  position: absolute;
+  font-size: 36px;
+  right: -22px;
+  top: 0;
+}
+
+.login-card {
+  background: rgba(255, 255, 255, 0.93);
+  border: 1px solid #e8f0e7;
+  border-radius: 27px;
+  padding: 42px;
+  box-shadow: 0 25px 70px rgba(35, 90, 51, 0.11);
+}
+
+.card-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #237947;
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.brand-leaf {
+  font-size: 35px;
+}
+
+.brand-tagline {
+  text-align: center;
+  margin-top: 9px;
+  color: #728b78;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+}
+
+.login-card h2 {
+  margin-top: 38px;
+  font-size: 30px;
+  letter-spacing: -1px;
+}
+
+.card-description {
+  color: #78877d;
+  font-size: 13px;
+  line-height: 1.7;
+  margin-top: 9px;
+  margin-bottom: 27px;
+}
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-card form>label {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+
+.login-card form>input {
+  width: 100%;
+  padding: 15px 16px;
+  margin-bottom: 21px;
+  border: 1px solid #dce6dc;
+  border-radius: 12px;
+  background: #fbfdfb;
+  outline: none;
+  font-size: 14px;
+  color: #193c30;
+  transition: 0.2s;
+}
+
+.login-card form>input:focus {
+  border-color: #2c9555;
+  box-shadow: 0 0 0 4px #e5f4e6;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.remember-option {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #62766b;
+  font-size: 12px;
+}
+
+.remember-option input {
+  accent-color: #28834b;
+}
+
+.forgot-link {
+  font-size: 11px;
+  color: #728176;
+}
+
+.login-button {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  background: linear-gradient(110deg, #27844b, #35a15d);
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(39, 132, 75, 0.19);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.login-button span {
+  margin-left: 8px;
+  font-size: 19px;
+}
+
+.login-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 22px rgba(39, 132, 75, 0.26);
+}
+
+.login-divider {
+  text-align: center;
+  margin: 25px 0;
+  color: #a0afa3;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+.register-prompt {
+  text-align: center;
+  font-size: 12px;
+  color: #78877d;
+  margin-bottom: 24px;
+}
+
+.register-prompt a,
+.back-home {
+  color: #258047;
+  font-weight: 700;
+}
+
+.register-prompt a {
+  margin-left: 4px;
+}
+
+.back-home {
+  display: inline-block;
+  font-size: 13px;
+}
+
+.login-footer {
+  text-align: center;
+  color: #829284;
+  font-size: 11px;
+  padding: 12px 20px 25px;
+}
+
+.login-footer span {
+  color: #318b4c;
+}
+
+@media (max-width: 900px) {
+  .login-layout {
+    grid-template-columns: 1fr;
+    max-width: 570px;
+    gap: 30px;
+    margin-top: 10px;
+  }
+
+  .login-intro {
+    text-align: center;
+  }
+
+  .login-intro h1 {
+    font-size: 42px;
+  }
+
+  .intro-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .eco-benefits {
+    max-width: 350px;
+    margin: 28px auto 0;
+    text-align: left;
+  }
+
+  .earth-art {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .login-navbar {
+    padding: 20px;
+  }
+
+  .brand {
+    font-size: 24px;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  .nav-links>a:nth-child(2) {
+    display: none;
+  }
+
+  .nav-links .nav-register {
+    padding: 9px 13px;
+  }
+
+  .login-layout {
+    padding: 15px 16px 30px;
+  }
+
+  .login-intro h1 {
+    font-size: 35px;
+    letter-spacing: -1.4px;
+  }
+
+  .intro-description {
+    font-size: 14px;
+  }
+
+  .login-card {
+    padding: 28px 22px;
+    border-radius: 21px;
+  }
+
+  .card-brand {
+    font-size: 32px;
+  }
+
+  .login-card h2 {
+    font-size: 26px;
+  }
+}
